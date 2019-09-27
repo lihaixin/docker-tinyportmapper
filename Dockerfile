@@ -19,5 +19,5 @@ EXPOSE 5001/udp
 
 CMD /usr/bin/tinymapper \
               -l "$L_ADDR" \
-              -r "R_ADDR" \
+              -r "$R_ADDR" \
               $OPTIONS
