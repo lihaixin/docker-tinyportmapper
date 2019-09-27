@@ -4,7 +4,7 @@ ENV TZ=Asia/Shanghai
 
 ENV L_ADDR 0.0.0.0:5001
 ENV R_ADDR 8.8.8.8:5001
-ENV OPTIONS "-t -u --log-level 4"
+ENV OPTIONS "-t -u --log-level 4 --sock-buf 1024"
 
 WORKDIR /home
 RUN apk add -U tzdata \
@@ -15,7 +15,6 @@ RUN apk add -U tzdata \
 
 EXPOSE 5001/tcp
 EXPOSE 5001/udp
-
 
 CMD /usr/bin/tinymapper \
               -l "$L_ADDR" \
