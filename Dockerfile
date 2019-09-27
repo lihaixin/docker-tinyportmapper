@@ -11,7 +11,7 @@ RUN apk add -U tzdata \
         && wget https://github.com/wangyu-/tinyPortMapper/releases/download/$tinyPortMapper_VER/tinymapper_binaries.tar.gz -O tinymapper_binaries.tar.gz \
         && tar -zxvf tinymapper_binaries.tar.gz \
         && find ./ -type f -not -name tinymapper_amd64 -delete \
-        && mv tinymapper_amd64 /usr/bin/tinymapper \
+        && mv tinymapper_amd64 /usr/bin/tinymapper
 
 EXPOSE 5001/tcp
 EXPOSE 5001/udp
