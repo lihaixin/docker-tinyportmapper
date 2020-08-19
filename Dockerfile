@@ -1,5 +1,5 @@
 FROM alpine:3.8
-ARG tinyPortMapper_VER=20180224.0
+ARG tinyPortMapper_VER=20200818.0
 ENV TZ=Asia/Shanghai
 
 ENV L_ADDR 0.0.0.0:5001
